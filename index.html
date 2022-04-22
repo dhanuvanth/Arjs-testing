@@ -66,7 +66,7 @@
                         var scaledHeight = origCanvas.width * scale;
                         var scaledWidth = origCanvas.height * scale;
                         var marginLeft = ( origCanvas.width - scaledWidth) / 2;
-                        resizedContext.drawImage(origCanvas, marginLeft, 0, scaledWidth, scaledHeight);
+                        resizedContext.drawImage(origCanvas, marginLeft, 0, scaledHeight, scaledWidth);
                     }
 
                     return resizedCanvas.toDataURL();
